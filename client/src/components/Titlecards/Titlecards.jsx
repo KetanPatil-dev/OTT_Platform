@@ -1,10 +1,24 @@
-import React from 'react'
-import "./Titlecards.css"
+import React  from "react";
+import "./Titlecards.css";
+import card_data from "../../assets/cards/Cards_data";
 
 const Titlecards = () => {
+  
   return (
-    <div className='titlecards'> Titlecards</div>
-  )
-}
+    <div className="title-cards">
+      <h2>Popular on CloneFlix</h2>
+      <div className="card-list">
+        {card_data.map((card, index) => {
+          return (
+            <div key={index + 1} className="card">
+              <img src={card.image}  alt="card-img"/>
+              <p>{card.name}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-export default Titlecards
+export default Titlecards;

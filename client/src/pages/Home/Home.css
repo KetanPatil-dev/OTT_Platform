@@ -1,8 +1,63 @@
 .hero{
     position: relative;
+    
 }
 .banner-img{
+    margin-top: 75px;
     width: 100%;
     mask-image: linear-gradient(to right,transparent,black 75%);
     -webkit-mask-image:linear-gradient(to right,transparent,black 75%)
+}
+
+.hero-caption{
+    margin-top: 100px;
+    position: absolute;
+    padding: 7%;
+    bottom: 0;
+    width: 100%;
+}
+
+.caption-img{
+    width: 100%;
+    max-width: 490px;
+}
+.hero-caption p{
+    margin-left: 0;
+    max-width: 60%;
+}
+.hero-btns{
+    display: flex;
+    gap: 15px
+}
+
+
+
+.hero-btns img{
+    
+    width: 30px;
+    
+    
+}
+
+ .btn{
+    margin-top: 10px;
+    border-radius:3.5px;
+    border: 0;
+    padding: 8px 20px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.dark-btn{
+    border-radius:3.5px;
+    background-color:#6d6d6eb3;
+    color: #fff;
+}
+.btn:hover{
+    background: #ffffffbf;
+}
+.dark-btn:hover{
+    background: #6d6d6e66;
 }
