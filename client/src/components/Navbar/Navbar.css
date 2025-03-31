@@ -23,7 +23,51 @@
 .navbar-left ul{
     display: flex;
     list-style: none;
-    gap:20px;
+    gap:30px;
     cursor:pointer
 
+}
+
+.navbar-right {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+
+.icons{
+    width: 20px;
+    cursor: pointer;
+}
+ .profile{
+    border-radius: 4px;
+    width: 40px;
+}
+
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.dropdown{
+    position:absolute;
+     top:100%;
+     right: 0;
+     display: none;
+     width: max-content;
+     padding: 20px 22px;
+     border-radius: 2px;
+     text-decoration: underline;
+     z-index: 1;
+     cursor: pointer;
+     display: none;
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+}
+.para{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
