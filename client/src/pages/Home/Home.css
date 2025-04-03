@@ -9,6 +9,12 @@
     -webkit-mask-image:linear-gradient(to right,transparent,black 75%)
 }
 
+.more-cards{
+    margin-left: 90px;
+    margin-top: 0;
+    
+}
+
 .hero-caption{
     margin-top: 100px;
     position: absolute;
