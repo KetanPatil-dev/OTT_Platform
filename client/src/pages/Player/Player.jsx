@@ -4,7 +4,12 @@ import back_arrow_icon from "../../assets/back_arrow_icon.png"
 import { Link, useParams } from 'react-router-dom'
 const Player = () => {
   const {id}=useParams()
-  const [api,setApi]=useState([])
+  const [api,setApi]=useState({
+    name:"",
+    key:"",
+    published_at:"",
+    typeof:''
+  })
   const options = {
     method: 'GET',
     headers: {
@@ -17,7 +22,7 @@ const Player = () => {
     .then(res => res.json())
     .then(res =>setApi(res.results[0]) )
     .catch(err => console.error(err));
-  })
+  },[])
   
   return (
     <div className='container'>
