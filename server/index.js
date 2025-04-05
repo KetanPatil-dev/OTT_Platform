@@ -6,6 +6,7 @@ import UserRoutes from "./routes/user.routes.js"
 import cookieParser from "cookie-parser"
 import MovieRoutes from "./routes/movie.route.js"
 import ListRoutes from "./routes/list.route.js"
+import cors from "cors"
 
 dotenv.config()
 
@@ -14,6 +15,11 @@ const app= express()
 
 app.use(express.json())
 app.use(cookieParser())
+app.use(cors({
+    origin:"http://localhost:5173",
+    credentials:true,
+    
+}))
 
 const Start= async()=>{
     try {

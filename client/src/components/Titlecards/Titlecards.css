@@ -25,4 +25,6 @@ overflow-x: scroll;
     position: absolute;
     bottom: 10px;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
 }

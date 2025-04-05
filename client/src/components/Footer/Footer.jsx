@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='footer'> 
     <div className='footer-icons'>
-      <img src={insta_icon} alt="insta_icon"/>
+      <a href='https://www.instagram.com/ketan_027/?hl=en'><img src={insta_icon} alt="insta_icon"/></a>
       <img src={twitter_icon} alt="x_icon"/>
       <img src={youtube_icon} alt="yt_icon"/>
       <img src={fb_icon} alt="fb_icon"/>

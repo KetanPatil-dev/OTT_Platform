@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Titlecards.css";
+import { Link } from "react-router-dom";
 
 const Titlecards = ({ title,category }) => {
   const [api, setApi] = useState([]);
-
+ 
   const options = {
     method: "GET",
     headers: {
@@ -15,12 +16,12 @@ const Titlecards = ({ title,category }) => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?language=en-US&page=1`,
+      `https://api.themoviedb.org/3/movie/${category?category:"upcoming"}?language=en-US&page=1`,
       options
     ).then((res) => res.json())
-      .then((res) => setApi(res.results))
+      .then((res) => setApi(res.results||[]))
       .catch((err) => console.error(err));
-  },[] );
+  },[category]);
   console.log(api);
   return (
     <div className="title-cards">
@@ -28,13 +29,13 @@ const Titlecards = ({ title,category }) => {
       <div className="card-list">
         {api.map((card, index) => {
           return (
-            <div key={index + 1} className="card">
+          <Link to={`/player/${card.id}`}><div key={index + 1} className="card">
               <img
                 src={"https://image.tmdb.org/t/p/w500" + card.backdrop_path}
                 alt="card-img"
               />
               <p>{card.original_title}</p>
-            </div>
+            </div></Link>
           );
         })}
       </div>

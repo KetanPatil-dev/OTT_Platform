@@ -1,22 +1,21 @@
+import Home from "./pages/Home/Home";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import Login from "./pages/Login/Login";
+import Player from "./pages/Player/Player";
 
-import Home from './pages/Home/Home'
-
-import {BrowserRouter,Route,Routes} from "react-router-dom"
-import Login from "./pages/Login/Login"
 function App() {
-
-
   return (
-  <BrowserRouter>
-  <Routes>
-
-  <Route path='/'  element={ <Home/>} />
-  <Route path='/login'  element={<Login/>} />
-  </Routes>
-  </BrowserRouter>
-    
-  )
+    <BrowserRouter>
+      <Toaster />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/player/:id" element={<Player />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

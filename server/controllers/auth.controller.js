@@ -40,14 +40,14 @@ export const Login= async(req ,res)=>{
         {
             return res.status(404).json({success:false,message:"Invalid Password"})
         }
-        const token = jwt.sign({userId:findUser._id,isAdmin:findUser.isAdmin},process.env.JWT_SECRET)
+        const token = jwt.sign({userId:findUser._id},process.env.JWT_SECRET)
         res.cookie("token",token,{
             httpOnly:true,
             secure:false,
             maxAge:3*24*60*60*1000
         })
        const {password:_,...userInfo}=findUser._doc
-        return res.status(201).json({success:true,message:"User Logged In Successfully",token, userInfo
+        return res.status(201).json({success:true,message:"User Logged In Successfully",token
         })
     } catch (error) {
         console.log("Login Error",error)
