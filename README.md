@@ -7,6 +7,7 @@ A full-stack Netflix clone that allows users to sign up, log in, and browse a dy
 ![image alt](https://github.com/KetanPatil-dev/OTT_Platform/blob/bcaa16730af2e1456ff369aa090fa15033342e76/Images/Screenshot%202025-04-04%20at%202.04.00%E2%80%AFPM.png)
 ![image alt](https://github.com/KetanPatil-dev/OTT_Platform/blob/f8c1596c58ea20ab7f6a03ff5a42cdb19e4bba1f/Images/Screenshot%202025-04-04%20at%202.05.01%E2%80%AFPM.png)
 ![image alt](https://github.com/KetanPatil-dev/OTT_Platform/blob/ae11c7b7bef3940c0b4032756be03f966dd89eff/Images/Screenshot%202025-04-05%20at%2011.08.51%E2%80%AFPM.png)
+![image alt](https://github.com/KetanPatil-dev/OTT_Platform/blob/eb1f33436198658ace7911bc8e909702178f9770/Images/Screenshot%202025-04-06%20at%209.45.27%E2%80%AFPM.png)
 ---
  
 ## 🚀 Features
