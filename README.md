@@ -69,5 +69,5 @@ npm install
 /controllers    → API logic (auth, movies)
 /routes         → Express routes
 /middleware     → JWT verification
-- NOTE :- The authentication I implemented was designed mt me because one of the routes threw random error, it worked fine on Postman but not on the Client side.
+- NOTE :- The authentication I implemented was designed by me because one of the routes threw random error, it worked fine on Postman but not on the Client side.
   So i made my own custom authentication.
