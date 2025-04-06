@@ -55,10 +55,10 @@ A full-stack Netflix clone that allows users to sign up, log in, and browse a dy
 
 git clone https://github.com/your-username/netflix-clone.git
 cd netflix-clone
-- Frontend
+- Frontend -
 cd client
 npm install
-- Backend
+- Backend -
   cd server
 npm install
 
