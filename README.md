@@ -3,6 +3,7 @@
 
 A full-stack Netflix clone that allows users to sign up, log in, and browse a dynamic collection of movies fetched from an external API. Built using **React**, **Node.js**, **MongoDB**, and **JWT Authentication**.
 
+![image alt](https://github.com/KetanPatil-dev/OTT_Platform/blob/df487cf464a0ed259f0fcb1352316f59db456730/Images/Screenshot%202025-04-04%20at%202.01.57%E2%80%AFPM.png)
 ---
 
 ## 🚀 Features
