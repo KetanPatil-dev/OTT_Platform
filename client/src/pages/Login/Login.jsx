@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Login.css"
 import logo from "../../assets/cloneflix.png"
 import axios from "axios"
@@ -16,6 +16,17 @@ const [login,setLogin]=useState({
 const handleLogin=(e)=>{
   setLogin({...login,[e.target.name]:e.target.value})
 }
+const verify=async()=>{
+  try {
+    const res= await axios.get("http://localhost:7676/auth/verify",{withCredentials:true})
+    console.log(res)
+  } catch (error) {
+    console.log(error)
+  }
+}
+useEffect(()=>{
+  verify()
+})
 const SubmitLogin=async(e)=>{
   try {
     e.preventDefault()
@@ -25,6 +36,8 @@ const SubmitLogin=async(e)=>{
     
     if(data2.success===true)
       {
+
+        localStorage.setItem("qlftdcfdamxnraaezogjkznrzdjqdgtf",data2.token)
         navigate("/")
         
         

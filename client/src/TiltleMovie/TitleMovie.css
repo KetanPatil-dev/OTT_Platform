@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}  
+.container1 img{
+width: 30px;
+cursor: pointer;
+}  
+.video iframe{
+    width: 100vw ;
+    height: 90vh;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info p{
+  color: gray;
+  font-size: 16px;
+  font-weight: 500;
+}

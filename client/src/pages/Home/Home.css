@@ -55,6 +55,7 @@
     align-items: center;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }
 .dark-btn{
     border-radius:3.5px;
@@ -66,4 +67,33 @@
 }
 .dark-btn:hover{
     background: #6d6d6e66;
+}
+
+@media  (max-width:1000px) {
+    .hero-caption .title-cards{
+        display: none;
+    }
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+    
+}
+@media (max-widht:800px){
+    .hero-caption{
+        padding-left: 4% ;
+    }
+    .caption-img{
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .hero-caption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .btn img{
+        width: 20px;
+    }
+    .more-cards{
+        padding-left: 4%;
+    }
 }
